@@ -82,7 +82,7 @@ git remote -v
 To set up CI/CD pipeline we need 3 information.
 
 1. HEROKU_EMAIL = adviteeya.shrav21@st.niituniversity.in
-2. HEROKU_API_KEY = 7167f954-b519-4489-82a4-30fd719cf0e5
+2. HEROKU_API_KEY = <>
 3. HEROKU_API_NAME = ml-regression-mbisde
 
 
@@ -91,3 +91,25 @@ BUILD DOCKER IMAGE
 docker build -t <image_name>:<tagname> .
 '''
 > Nore: Image name for the docker should be in lower case 
+
+To list docker images
+
+'''
+docker images
+'''
+
+RUN docker image 
+
+'''
+docker run -p  5000:5000 -e PORT=5000 62649b3cb8cb
+
+'''
+To check running containers 
+'''
+docker ps 
+'''
+
+To stop docker container
+'''
+docker stop <container_id>
+'''
