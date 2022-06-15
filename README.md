@@ -1,10 +1,11 @@
 # ML-Project
 Start Machine Learning project.
 Software and account Requirement.
-Github Account
-Heroku Account
-VS Code IDE
-GIT cli
+[Github Account] (https://github.com)
+[Heroku Account] (https://id.heroku.com/login)
+[VS Code IDE] (https://code.visualstudio.com/docs/?dv=win)
+[GIT cli] (https://git-scm.com/downloads)
+[GIT Documentation] (https://git-scm.com/docs/gittutorial)
 
 
 Creating conda environment.
@@ -71,3 +72,11 @@ To check remote url
 '''
 git remote -v
 '''
+
+To set up CI/CD pipeline we need 3 information.
+
+1. HEROKU_EMAIL = adviteeya.shrav21@st.niituniversity.in
+2. HEROKU_API_KEY = 7167f954-b519-4489-82a4-30fd719cf0e5
+3. HEROKU_API_NAME = ml-regression-mbisde
+
+
