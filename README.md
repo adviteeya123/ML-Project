@@ -24,7 +24,10 @@ Install flask
 pip install -r  requirements.txt
 python -m pip install flask
 '''
+
 To add files to the git
+
+STEP 1
 
 '''
 git add .
@@ -55,12 +58,15 @@ git log
 
 '''
 
+STEP 2
+
 To create version/commit all changes by git
 
 '''
 git commit -m "message"    
 
 '''
+STEP 3
 
 To send version/changes to git hub
 '''
@@ -80,3 +86,8 @@ To set up CI/CD pipeline we need 3 information.
 3. HEROKU_API_NAME = ml-regression-mbisde
 
 
+BUILD DOCKER IMAGE
+'''
+docker build -t <image_name>:<tagname> .
+'''
+> Nore: Image name for the docker should be in lower case 
