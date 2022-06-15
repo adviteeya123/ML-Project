@@ -8,20 +8,19 @@ GIT cli
 
 
 Creating conda environment.
-
 '''
-
 conda create -p venv python==3.7 -y
-
-
 '''
+
+Activating conda environment
 '''
 conda activate venv/
 
 '''
+Install flask
 
 '''
->pip install -r  requirements.txt
+pip install -r  requirements.txt
 python -m pip install flask
 '''
 To add files to the git
@@ -32,7 +31,6 @@ git add .
 '''
 OR 
 
-
 '''
 git add <file_name>
 
@@ -42,6 +40,7 @@ Note: To ignore file or folder from git we can write name of file/folder  in .gi
 
 
 To check git status
+
 '''
 
 git status
@@ -56,6 +55,7 @@ git log
 '''
 
 To create version/commit all changes by git
+
 '''
 git commit -m "message"    
 
