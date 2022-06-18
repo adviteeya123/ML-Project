@@ -1,11 +1,28 @@
 
+from logging import exception
+import sys
 from flask import Flask
-
+import housing
+from housing.exception import HousingException
+from housing.logger import logging
 app = Flask(__name__)
 
 @app.route("/", methods= ['GET','POST'])
 def index():
-    return "Starting Machine Learning Projects-- Kya ho raha hai khushbu bhot ladai karte ho -- Kya ho raha hai swati bhot thak jati ho tum kaam karte karte karte ho -- Kya ho raha hai jyoti  bhot gym jane lage ho aur wahan ladai  karte ho "
+    try:
+        raise Exception("We are testing custom exception")
+    except Exception as e:
+        housing = HousingException(e,sys)
+        logging.info(housing.error_message)
+        logging.info("We are testing logging module")
+    
+
+
+
+
+    #logging.info("We are testing logging modules")
+
+    return ("Starting Machine Learning Projects-- ")
 
 if __name__=="__main__":
     app.run(debug= True)
