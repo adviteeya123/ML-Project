@@ -15,6 +15,7 @@ def index():
         housing = HousingException(e,sys)
         logging.info(housing.error_message)
         logging.info("We are testing logging module")
+        return "Starting Machine Learning Projects-- "
     
 
 
@@ -22,7 +23,7 @@ def index():
 
     #logging.info("We are testing logging modules")
 
-    return ("Starting Machine Learning Projects-- ")
+    
 
 if __name__=="__main__":
     app.run(debug= True)
