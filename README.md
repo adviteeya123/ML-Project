@@ -12,20 +12,25 @@
 
 
 Creating conda environment.
+
 '''
 conda create -p venv python==3.7 -y
+
 '''
 
 Activating conda environment
+
 '''
 conda activate venv/
 
 '''
+
 Install flask
 
 '''
 pip install -r  requirements.txt
 python -m pip install flask
+
 '''
 
 To add files to the git
