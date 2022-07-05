@@ -1,21 +1,14 @@
-from gc import get_referents
-from unicodedata import name
-from xml.etree.ElementTree import VERSION
-from importlib_metadata import version
-from setuptools import find_packages, setup
+from setuptools import setup, find_packages
 from typing import List
-
-
-
 
 
 #DECLARING VARIABLES FOR SETUP FUNCTIONS
 
 PROJECT_NAME="housing-predictor"
-VERSION="22.1.2"
+VERSION="0.0.2"
 AUTHOR="ADVITEEYA SHRAV"
 DESCRIPTION= "THIS IS THE FIRST FSDS NOV. BATCH ML PROJECTS "
-PACKAGES=["housing"]
+# PACKAGES=["housing"]
 REQUIREMENTS_FILE_NAME= "requirements.txt"
 
 
@@ -44,5 +37,5 @@ install_requirements = get_requirements_list()
 
 )
 
-if __name__=="__main__":
-    print(get_requirements_list())
+#if __name__=="__main__":
+ #   print(get_requirements_list())
