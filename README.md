@@ -1,6 +1,9 @@
 # ML-Project
+
 Start Machine Learning project.
+
 Software and account Requirement.
+
 [Github Account] (https://github.com)
 [Heroku Account] (https://id.heroku.com/login)
 [VS Code IDE] (https://code.visualstudio.com/docs/?dv=win)
@@ -112,4 +115,17 @@ docker ps
 To stop docker container
 '''
 docker stop <container_id>
+'''
+
+'''
+
+python setup.py install 
+'''
+
+'''
+pip install -r requirements.txt
+'''
+
+'''
+pip install -e
 '''
