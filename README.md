@@ -134,3 +134,16 @@ pip install -r requirements.txt
 '''
 pip install -e
 '''
+
+Install python kernel
+
+```
+pip install ipykernel
+
+```
+
+Install YAML 
+
+```
+pip install PyYAML
+```
