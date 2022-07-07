@@ -2,7 +2,7 @@ from collections import namedtuple
 from datetime import datetime
 import uuid
 from housing.config.configuration import Configuartion
-from housing.logger import logging,get_log_file_name
+from housing.logger import logging
 from housing.exception import HousingException
 from threading import Thread
 from typing import List
@@ -20,7 +20,7 @@ import os, sys
 from collections import namedtuple
 from datetime import datetime
 import pandas  as pd
-from housing.constant import EXPERIMENT_DIR_NAME, EXPERIMENT_FILE_NAME
+from housing.constant import EXPERIMENT_DIR_NAME, EXPERIMENT_FILE_NAME 
 Experiment = namedtuple("Experiment",["experiment_id","initialization_timestamp","artifact_time_stamp",
 "running_status","start_time","stop_time","execution_time","message","experiment_file_path"])
 
@@ -195,7 +195,7 @@ class Pipeline(Thread):
             else:
                 print("First start experiment")
         except Exception as e:
-            raise HousingException(e,sys) from e    
+            raise HousingException(e,sys) from e   
     @classmethod
     def get_experiments_status(cls,limit:int=5)->pd.DataFrame:
         try:

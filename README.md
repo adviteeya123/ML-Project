@@ -147,3 +147,22 @@ Install YAML
 ```
 pip install PyYAML
 ```
+
+Install dill file
+
+```
+pip install dill 
+```
+Install matplotlib file
+
+```
+pip install matplotlib
+```
+
+Data drift :
+
+When your data set stats gets changes it is called data drift.
+Compare the stats of two data sets and if there is no difference there is 0 percent data drift. 
+If two data set is not similar it has data drift. 
+
+
