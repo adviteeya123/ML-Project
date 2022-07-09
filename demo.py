@@ -12,7 +12,8 @@ def main():
         #data_validation_config = Configuartion().get_data_validation_config()
         #data_transformation_config = Configuartion().get_data_transformation_config()
         #data_model_training_config = Configuartion().get_model_trainer_config()
-        
+        #data_model_pusher_config = Configuartion().get_model_pusher_config()
+        #data_model_evaluator_config = Configuartion().get_model_evaluation_config()
     except Exception as e:
         logging.error(f"{e}")
         print(e)
