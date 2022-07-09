@@ -6,12 +6,12 @@ from housing.config.configuration import Configuartion
 
 def main():
     try:
-        pipeline = Pipeline()
-        pipeline.run_pipeline()
+        #pipeline = Pipeline()
+        #pipeline.run_pipeline()
         #data_ingestion_config = Configuartion().get_data_ingestion_config()
         #data_validation_config = Configuartion().get_data_validation_config()
-        #data_transformation_config = Configuartion().get_data_transformation_config()
-        #data_model_training_config = Configuartion().get_model_trainer_config()
+        # data_transformation_config = Configuartion().get_data_transformation_config()
+        data_model_training_config = Configuartion().get_model_trainer_config()
         #data_model_pusher_config = Configuartion().get_model_pusher_config()
         #data_model_evaluator_config = Configuartion().get_model_evaluation_config()
     except Exception as e:
