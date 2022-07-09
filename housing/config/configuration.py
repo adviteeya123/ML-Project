@@ -1,11 +1,5 @@
-# we will be creating many functions in this configurartion file
 
-from logging.config import fileConfig
-from tkinter import E
-from sklearn.linear_model import PassiveAggressiveClassifier
-
-
-from housing.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, \
+from housing.entity.config_entity import DataIngestionConfig, DataTransformationConfig,DataValidationConfig,   \
 ModelTrainerConfig,ModelEvaluationConfig,ModelPusherConfig,TrainingPipelineConfig
 from housing.util.util import read_yaml_file
 from housing.logger import logging
@@ -17,7 +11,7 @@ from housing.exception import HousingException
 class Configuartion:
 
     def __init__(self,
-        config_file_path: str = CONFIG_FILE_PATH,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   h:str =CONFIG_FILE_PATH,
+        config_file_path:str =CONFIG_FILE_PATH,
         current_time_stamp:str = CURRENT_TIME_STAMP
         ) -> None:
         try:
@@ -85,16 +79,10 @@ class Configuartion:
             data_validation_config = self.config_info[DATA_VALIDATION_CONFIG_KEY]
 
 
-            # INPUT
-
-
             schema_file_path = os.path.join(ROOT_DIR,
             data_validation_config[DATA_VALIDATION_SCHEMA_DIR_KEY],
             data_validation_config[DATA_VALIDATION_SCHEMA_FILE_NAME_KEY]
             )
-
-
-            # OUTPUT
 
             report_file_path = os.path.join(data_validation_artifact_dir,
             data_validation_config[DATA_VALIDATION_REPORT_FILE_NAME_KEY]
@@ -125,10 +113,8 @@ class Configuartion:
             )
 
             data_transformation_config_info=self.config_info[DATA_TRANSFORMATION_CONFIG_KEY]
-            # information of the yml file
 
             add_bedroom_per_room=data_transformation_config_info[DATA_TRANSFORMATION_ADD_BEDROOM_PER_ROOM_KEY]
-
 
 
             preprocessed_object_file_path = os.path.join(
